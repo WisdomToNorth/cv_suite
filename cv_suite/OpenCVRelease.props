@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>D:\OpenSource\opencv4.6_build220901\include;D:\OpenSource\opencv4.6_build220901\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OpenSource\opencv4.6_build220901\lib\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>ippiw.lib;ittnotify.lib;libjpeg-turbo.lib;libopenjp2.lib;IlmImf.lib;libprotobuf.lib;libtiff.lib;libwebp.lib;quirc.lib;ade.lib;opencv_img_hash460.lib;opencv_ts460.lib;libpng.lib;opencv_world460.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
