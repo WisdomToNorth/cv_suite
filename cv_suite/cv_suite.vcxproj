@@ -65,23 +65,23 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="OpenCVDebug.props" />
-    <Import Project="glog_debug.props" />
-    <Import Project="boost.props" />
-    <Import Project="thirdparty.props" />
-    <Import Project="pclRelease.props" />
+    <Import Project="..\props\boost.props" />
     <Import Project="..\props\eigen.props" />
-    <Import Project="zmq_debug.props" />
+    <Import Project="..\props\thirdparty.props" />
+    <Import Project="..\props\glog_debug.props" />
+    <Import Project="..\props\OpenCVDebug.props" />
+    <Import Project="..\props\pclDebug.props" />
+    <Import Project="..\props\zmq_debug.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="OpenCVRelease.props" />
-    <Import Project="glog_release.props" />
-    <Import Project="boost.props" />
-    <Import Project="thirdparty.props" />
-    <Import Project="pclRelease.props" />
+    <Import Project="..\props\boost.props" />
     <Import Project="..\props\eigen.props" />
-    <Import Project="zmq_release.props" />
+    <Import Project="..\props\thirdparty.props" />
+    <Import Project="..\props\glog_release.props" />
+    <Import Project="..\props\OpenCVRelease.props" />
+    <Import Project="..\props\pclRelease.props" />
+    <Import Project="..\props\zmq_release.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -146,6 +146,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp14</LanguageStandard>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>

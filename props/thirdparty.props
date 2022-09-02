@@ -3,7 +3,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <IncludePath>D:\CODE\cv_suite\thirdparty\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(MSBuildThisFileDirectory)..\thirdparty\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup />
   <ItemGroup />
